@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+    padding: 2%;
+}
+
+#none{
+    text-justify: auto;
+}
+
+img{
+    width: 75%;
+    height: 75%;
+}
+header{
+    background-color: #fdd66c;
+    padding: 10px;
+}
+
+.voltar{
+    background-color: #fdd66c;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.abrir-lateral{
+    color: black;
+    font-size: 20px;
+}
+
+ul, li{
+    margin: 20px 0;
+}
+
+nav{
+    height: 100%;
+    width: 0px;
+    background-color: #fdd66c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.4s;
+}
+
+nav a{
+    color: black;
+    font-size: 20px;
+    display: block;
+    padding: 10px 10px 10px 20px;
+}
+
+nav a:hover{
+    color: #fdd66c;
+    background-color: white;
+}
+
+main{
+    padding: 13px;
+    transition: margin-left 0.6s;
+}
+
+.bloco{
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+#leitura{
+    text-align: justify;
+    color: #333;
+    float: left;
+}
+
+#leitura p{
+    font-size: 17.5px;
+    margin: 20px 0;
+    line-height: 1.64;
+
+}
+
+#leitura h2{
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+#leitura h3{
+    font-size: 23px;
+    margin: 30px 0 10px 0;
+}
+
+#botao-cima{
+    text-decoration: none;
+    color: black;
+    background-color: #fdd66c;
+    padding: 13px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px #333;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        text-align: center; 
+    }
+    
+    .abrir-lateral, .voltar {
+        font-size: 16px;
+    }
+
+    .bloco{
+        padding: 13px;
+        margin-top: 5px;
+    }
+    
+    #leitura{
+        width: 100%;
+    }
+    
+    #leitura p{
+        font-size: 13.5px;
+    
+    }
+    
+    #leitura h2{
+        font-size: 18px;
+    }
+    
+    #leitura h3{
+        font-size: 15px;
+        margin: 30px 0 10px 0;
+    }
+
+    img {
+        width: 80%;
+        height: 80%;
+    }
+
+    ul, li{
+        font-size: 13.5px;
+    }
+    nav a{
+        color: black;
+        font-size: 13.5px;
+        padding: 10px 10px 10px 20px;
+    }
+}

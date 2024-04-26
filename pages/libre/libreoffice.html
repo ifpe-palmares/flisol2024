@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="raphaellyzzz">
+    <title>Linux Mint</title>
+    <link rel="stylesheet" href="stylelibre.css">
+    <link rel="icon" href="../../images/libre-logo.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="abrir-lateral" onclick="aberturaMenu()">&#9776; Menu Navegação</a>
+        <a href="../../index.html" class="voltar">&#8629; Voltar para a página inicial</a>
+    </header>
+    <nav id="menu">
+        <a href="#" onclick="fechar()">&times; Fechar</a>
+        <a href="#instalacao">Instalação</a>
+        <a href="#vantagem">Vantagem</a>
+        <a href="#desvantagem">Desvantagem</a>
+        <a href="questionario.html">Questionario</a>
+    </nav>
+    <main id="content">
+        <section id="leitura">
+            <article class="bloco">
+                <p>Leia todo o conteúdo da página e após isso clique no menu de navegação para ir ao questionário, Boa sorte!</p>
+                <h2 id="instalacao">Instalação</h2>
+                <img src="01.png" alt="01">
+                <img src="02.png" alt="02">
+                <img src="03.png" alt="03">
+                <img src="04.png" alt="04">
+                <img src="05.png" alt="05">
+                <img src="06.png" alt="06">
+                <img src="07.png" alt="07">
+                <img src="08.png" alt="08">
+                <img src="09.png" alt="09">
+                <img src="10.png" alt="10">
+                <img src="11.png" alt="11">
+                <h2 id="vantagem">Vantagem</h2>
+                <ul>
+                    <li>O LibreOffice tem uma ferramenta de desenho, chamada LibreOffice Draw, que não tem
+                        concorrentes na suíte Microsoft;</li>
+                    <li>O LibreOffice é gratuito para download;</li>
+                    <li>O LibreOffice pede apenas 256 MB de RAM, 1,5 GB de espaço em disco disponível e o
+                        mesmo monitor da concorrência. É menos exigente.</li>
+                </ul>
+                <h2 id="desvantagem">Desvantagem</h2>
+                <ul>
+                    <li>O Office conta com três programas que não tem versões gratuitas integrando a suíte
+                        LibreOffice: OneNote, para notas, Outlook, para gerenciamento de e-mails, e Publisher
+                        para layout de páginas;
+                    </li>
+                    <li>O LibreOffice possui detalhes arredondados e é menos amigável.</li>
+                </ul>               
+            </article>
+        </section>
+    </main>
+    <a id="botao-cima" href="#">&#923;</a>
+    <script> //script de fechar e abrir menu ao lado
+        function aberturaMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';   
+        }
+        function fechar(){
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('content').style.marginLeft = '0px';
+        }
+    </script>
+</body>
+</html>

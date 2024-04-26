@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="raphaellyzzz">
+    <title>Linux Mint</title>
+    <link rel="stylesheet" href="stylemint.css">
+    <link rel="icon" href="../../images/mint-logo.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="abrir-lateral" onclick="aberturaMenu()">&#9776; Menu Navegação</a>
+        <a href="../../index.html" class="voltar">&#8629; Voltar para a página inicial</a>
+    </header>
+    <nav id="menu">
+        <a href="#" onclick="fechar()">&times; Fechar</a>
+        <a href="#indroducao">O que é?</a>
+        <a href="#como-iso">Como baixar a ISO</a>
+        <a href="#pendrive">Como fazer um pendrive bootável?</a>
+        <a href="#dar-boot">Como dar boot no computador</a>
+        <a href="#passos">Passos Iniciais do Linux Mint</a>
+        <a href="#vantagens">Vantagens e desvantagens do Mint</a>
+        <a href="questionario.html">Questionario</a>
+    </nav>
+    <main id="content">
+        <section id="leitura">
+            <article class="bloco">
+                <p>Leia todo o conteúdo da página e após isso clique no menu de navegação para ir ao questionário, Boa sorte!</p>
+                <h2 id="introducao">O que é Linux Mint?</h2>
+                <p>É uma distribuição Linux Irlandesa que foi concebida por Clément Lefèbvre e que é ativamente desenvolvida pela equipe Linux Mint Team e por sua comunidade. Baseado em Ubuntu (Distribuição baseada em Debian) e Debian (Baseado em Linux kernel).</p>
+                <p>O Mint tem 3 tipos de ambientes: Cinnamon (Versão mais popular e mais atrativa visualmente), MATE (Versão mais estável que a Cinnamon) e Xfce (Tem interface mais simples, indicado para computadores mais simples e de baixo desempenho). </p>
+                
+                <h2 id="como-iso">Como baixar a ISO?</h2>
+                <p>Primeiramente precisamos decidir qual dos ambientes de trabalho vamos escolher. Após decidir, vamos abrir o site oficial do Mint</p>
+                <a id="none" href="https://www.linuxmint.com/download.php">Clique aqui!</a> 
+                <p>Vamos basear nosso tutorial pelo Cinnamon, porém, mesmo que o usuário escolha outro ambiente, a forma de instalação segue sendo a mesma. Vamos clicar no botão de “Download” como mostra na imagem abaixo.</p>
+                <img src="images/1.png" alt="1">
+                <p>Após isso, temos a opção de baixar a ISO por Torrent, caso o usuário tenha, é possível clicando no Torrent Download: 64-bit, como mostra na imagem, onde aponta a seta verde. <br>
+                Após isso, o usuário deve clicar no arquivo e vai ser direcionado para o Torrent. Caso o usuário não tenha, é possível baixar um espelho da distribuição, que está logo appós a imagem. </p>
+                <img src="images/2.png" alt="2">
+                <p>É importante escolher aquele que for mais próximo de sua localização atual. Nesse caso vamos escolher o do Brasil. Clicando em alguma delas vamos ser direcionados para o download da distribuição.</p>
+                <img src="images/3.png" alt="3">
+                <p>Após escolher o local onde vamos salvar, a imagem vai ser baixada e a partir daí teremos ela salva em nosso computador. A imagem pode ser utilizada para tanto formatar o computador num pendrive bootável (que trocamos o sistema operacional) ou numa máquina virtual (que usamos um software para simular a imagem).</p>
+                <img src="images/5.png" alt="5">
+
+                <h2 id="pendrive">Como fazer um pendrive bootável?</h2>
+                <p>Vamos utilizar o programa “Ventoy”, que permite transformar o pendrive numa unidade com boot, suportando arquivos ISO. Para baixar o Ventoy primeiro vamos entrar no site oficial. <a id="none" href="https://www.ventoy.net/en/download.html">Link</a></p>               
+                <img src="images/6.png" alt="6">
+                <p>Após entrar no site vamos baixar o programa clicando na opção: ventoy-1.0.97-wind</p>
+                <p>Após clicar, o usuário será direcionado para o site SourceForge, site que os desenvolvedores utilizam para guardar os programas, temos que clicar no ventoy-10.0.97-windows.zip</p>
+                <img src="images/7.png" alt="7">
+                <p>Após clicar nele, o usuário vai ser redirecionado para o download automático. Após o tempo acabar irá mostrar a tela do explorador de arquivos para o usuário escolher onde vai salvar</p>
+                <img src="images/8.png" alt="8">
+                <p>Após escolher o local e clicar em salvar. Apenas devemos clicar com o botão direito e extrair o arquivo. Lembrando que: Se tiver um software compactador e descompactador de dados (Exemplo: Winrar e 7-zip) tem como extrair da mesma maneira. No tutorial está sendo usado o nativo do Windows.</p>
+                <img src="images/9.png" alt="9">
+                <p>Após clicar em “Extrair Tudo…” devemos escolher onde queremos extrair, nesse caso, vamos extrair tudo na mesma pasta. Após clicar em “Extrair”, começará a carregar e vai aparecer a mesma pasta, porém, extraída.</p>
+                <img src="images/10.png" alt="10">
+                <p>Já na pasta vamos ter todos os arquivos do programa, para instalá-lo precisamos abrir o “Ventoy2DIsk”, pois, se trata do programa. Quando você clicar no arquivo, o windows perguntará se você deseja mesmo abrir, para fins de segurança isso é um procedimento padrão, devemos clicar em SIM pois o ventoy é código aberto e não apresenta malware.</p>
+                <img src="images/11.png" alt="11">
+                <p>Após ter clicado em abrir, irá mostrar a interface do software. Com um compartimento chamado “device” que significa o pendrive que está espetado no PC. Detalhe: é importante abrir o programa com o pendrive espetado. Caso espete o pendrive depois, clique no ícone verde ao lado do device. Após aparecer seu pendrive clique em “install” e ele fará a dupla verificação se você realmente deseja formatar o pendrive, pois, apagará todos os dados contidos no pendrive.</p>
+                <img src="images/12.png" alt="12">
+                <p>Após clicar ‘’Sim’’ em todos os avisos, irá começar a carregar. Quando finalizar, a mensagem ao lado irá aparecer. Essa mensagem informa que o Ventoy foi instalado com sucesso no pendrive! <br> Detalhe: ele trocará o nome do pendrive por “Ventoy”.</p>
+                <p>Você deve selecionar a imagem baixada com Ctrl + X (recortar o arquivo que está salvo no computador para o pendrive) e clicar no pendrive e colar com o Ctrl + V. Após carregar, pronto, a ISO está no pendrive pronta para dar o boot no computador. Lembrando que é possível colocar várias ISO’s no mesmo pendrive e escolher qual dar o boot. Como mostra na imagem. Essa é a tela do ventoy quando vai dar boot no computador, vemos várias distribuições de Linux e algumas ISOs do Windows, com a seta do teclado é possível escolher qual quer dar boot e clicando no “enter” será escolhido.</p>
+                <img src="images/14.png" alt="14">
+                <h3 id="dar-boot">Como dar boot no computador</h3>
+                <ul>
+                    <li>Com o pendrive pronto e espetado no gabinete, vamos dar o boot no computador!
+                        Boot é iniciar o computador, apenas temos um boot bem sucedido quando temos o SO (sistema operacional) completo, nesse caso estamos utilizando o termo para formatar o computador num novo SO. Siga o passo a passo: </li>
+                    <li>Desligue o computador;</li>
+                    <li>Ligue novamente o computador;</li>
+                    <li>Assim que ligar, aperte o botão “delete” do seu teclado para conseguir entrar na BIOS do seu computador. O botão de iniciar BIOS (Conjunto de instruções que permite que o processador trabalhe junto com os periféricos) pode variar de acordo com cada computador, normalmente é o “delete” do teclado. Caso não funcione, tente as teclas: Esc, F1, F2, F10 e F12 (não em sequência, tente uma de cada vez);</li>
+                    <li>Na tela de BIOS, vá na parte de Boot no canto superior;</li>
+                    <li>Quando estiver na aba de Boot coloque o seu pendrive como o “boot 1”. Ele deve ser o primeiro a iniciar junto com o windows;</li>
+                    <li>Após selecionar o pendrive como primeiro, vá na última aba que tem “Save and exit” e clique na opção “Save and exit”;</li>
+                    <li>Seu computador irá reiniciar e vai abrir a tela inicial do Ventoy e assim você clica com “enter” e vai começar a formatação!</li>
+                </ul>
+                <h2 id="passos">Passos Iniciais</h2>
+                <p>Vai aparecer a tela de início após boot do mint e você pode dar enter para entrar no sistema. Abaixo mostra melhor essa tela.</p>
+                <img src="images/15.png" alt="15">
+                <p>Ele vai carregar e logo irá abrir na tela inicial do mint. Vale lembrar que: o sistema a partir desse momento está rodando pelo seu pendrive, um mecanismo para o usuário fazer testes e se adaptar ao sistema, a partir do momento que o computador for desligado você reseta esse “período teste”. Para instalar de fato vamos clicar no ícone com CD no canto superior esquerdo que tem escrito “Install Linux Mint”.</p>
+                <img src="images/16.png" alt="16">
+                <p>Assim que clicar no “Install Linux Mint” abrirá a janela que aparece ao lado. Temos que descer essa barra da esquerda (marcada em azul) para colocar em “português Brasil” e depois no terceiro quadrado que tem escrito “continuar” (marcado em verde).</p>
+                <img src="images/17.png" alt="17">
+                <p>Após escolher o idioma geral, vamos definir qual o layout do teclado. O usuário deverá escolher “Português do Brasil” e após isso escolher o tipo de layout do teclado com “Português do Brasil”.</p>
+                <img src="images/18.png" alt="18">
+                <p>Após clicar em continuar, vamos ser direcionados para o “Codecs Multimídia”. É importante clicar em instalar esses codecs, pois é referente ao pleno funcionamento dos recursos de áudio do sistema. É importante clicar em instalar esses codecs, pois é referente ao pleno funcionamento dos recursos de áudio do sistema.</p>
+                <img src="images/19.png" alt="19">
+                <p>Aqui realmente acontecerá a formatação do seu computador. Clicando em “instalar agora” vai iniciar o processo de exclusão de todos os arquivos salvos no armazenamento de seu computador. Se você for um usuário que entenda como instalar de forma avançada, ou seja, deseja definir as partições, você pode utilizar “opção avançada” (recomendo pesquisar antes de mexer nesse aspecto, pois, um erro pode danificar seu sistema e você terá que formatar de novo). Por agora, vamos apenas clicar no: <br>
+                <br>Apagar disco e reinstalar o Linux Mint;
+                <br>Instalar agora (marcado em verde).</p>
+                <img src="images/20.png" alt="20">
+                <p>Após apagar o disco e reinstalar o linux, você vai definir o local onde se encontra para o sistema determinar a data e hora automáticamente. Você escolhe depois clica em "continuar".</p>
+                <img src="images/21.png" alt="21">
+                <p>O último passo agora é colocar suas informações (nome, senha) no: “Quem é você?” que aparece ao lado. Você colocará as seguintes informações para conseguir configurar o sistema para seu uso pessoal (na ordem que aparece na imagem nos devidos espaços): <br>
+                    <strong>Seu nome:</strong> Digite seu nome; <br>
+                    <strong>Nome do seu computador:</strong> Defina o nome da sua máquina; <br>
+                    <strong>Escolha um nome de usuário:</strong> Defina seu nome de usuário; <br>
+                    <strong>Escolha uma senha:</strong> Será a senha para entrar no sistema; <br>
+                    <strong>Confirme sua senha:</strong> Digite novamente sua senha. <br>
+                    </ul>
+                </p>
+                <img src="images/22.png" alt="22">
+                <p>Após colocar as informações e clicar em “continuar”, o linux mint começará a ser instalado. Como mostra na imagem ao lado. A partir de agora, você deve esperar o periodo de instalação.</p>
+                <p>Quando a instalação for finalizada vai aparecer essa seguinte mensagem na sua área de trabalho. Se você ainda quiser continuar testando, fique à vontade! >A partir desse momento, você pode clicar em “Reiniciar agora” que ele irá pedir para você remover o pendrive e apertar enter.</p>
+                <p>Após reiniciar, vai aparecer a tela de bloqueio do seu sistema, você apenas deverá colocar a senha e pronto! Seu Linux Mint está pronto para uso!</p>
+                <img src="images/24.png" alt="24">
+
+                <h2 id="vantagens">Vantagens</h2>
+                <ul>
+                    <li>Comunidade ativa</li>
+                </ul>
+                <p>A comunidade do Linux Mint é extremamente ativa e engajada em ajudar com dificuldades de novos usuários na utilização do sistema. Com fóruns e suporte online, se destaca como uma comunidade acolhedora com usuário novo ou avançado. O Debian, porém, não tem uma comunidade tão acessível em relação ao Mint.</p>
+                <ul>
+                    <li>Interface</li>
+                </ul>
+                <p>A interface do Linux Mint é conhecida por ser amigável e muito intuitiva, fazendo assim novos usuários não terem problemas com adaptação logo no início. Já o Debian tem uma interface muito mais técnica considerada até difícil para usuários avançados.</p>
+                <ul>
+                    <li>Drivers pré-instalados</li>
+                </ul>
+                <p>O Mint tem drivers, como os de WI-FI e vídeo, já pré-instalados dependendo do seu hardware. Deixando assim muito mais fácil a configuração inicial para um usuário iniciante. Em diferença ao Debian que, precisa de um esforço técnico para a instalação dos mesmos drives.</p>
+                <h2>Desvantagens</h2>
+                <ul>
+                    <li>Consome mais recursos</li>
+                </ul>
+                <p>O Mint, por ter questões de ter interface amigável para usuário iniciante e toda personalização estética, consome muito do hardware e de recursos do usuário. Em diferença ao Debian, que tem interface mais simples, porém, muito mais leve.</p>
+                <ul>
+                    <li>Atualizações não frequentes</li>
+                </ul>
+                <p>O Mint utiliza de versões estáveis de Ubuntu, fazendo assim não ter tantas atualizações para o usuário e, consequentemente, o sistema pode “estagnar” numa configuração específica não tão indicada no momento. Já o Debian tem suas atualizações “rolling release” que trazem atualizações frequentes ao sistema.</p>
+                <ul>
+                    <li>Não tão reconhecido em corporações</li>
+                </ul>
+                <p>O Mint não é tão utilizado em empresas tecnológicas quanto o Debian, que tem mais destaque nesse aspecto por ter recursos adicionais à proteção.</p>
+            </article>
+        </section>
+    </main>
+    <a id="botao-cima" href="#">&#923;</a>
+    <script> //script de fechar e abrir menu ao lado
+        function aberturaMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';   
+        }
+        function fechar(){
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('content').style.marginLeft = '0px';
+        }
+    </script>
+</body>
+</html>

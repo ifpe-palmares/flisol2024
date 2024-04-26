@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="raphaellyzzz">
+    <title>Firefox</title>
+    <link rel="stylesheet" href="stylefox.css">
+    <link rel="icon" href="../../images/firefox-logo.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="abrir-lateral" onclick="aberturaMenu()">&#9776; Menu Navegação</a>
+        <a href="../../index.html" class="voltar">&#8629; Voltar para a página inicial</a>
+    </header>
+    <nav id="menu">
+        <a href="#" onclick="fechar()">&times; Fechar</a>
+        <a href="#baixar">Baixar</a>
+        <a href="#instalar">Instalar</a>
+        <a href="#usar">Usar</a>
+        <a href="#vantagens">Vantagens</a>
+        <a href="#desvantagens">Desvantagens</a>
+        <a href="questionario.html">Questionario</a>
+    </nav>
+    
+    <main id="content">
+        <section id="leitura">
+            <article class="bloco">
+                <p>Leia todo o conteúdo da página e após isso clique no menu de navegação para ir ao questionário, Boa sorte!</p>
+                <h2 id="instalar">Como baixar o Mozilla Firefox</h2>
+                <ul>
+                    <li>Abra o navegador atual em seu computador ou dispositivo;</li>
+                    <li>Na barra de pesquisa, digite "Mozilla Firefox download" e pressione Enter;</li>
+                    <li>Clique no link oficial do site da Mozilla para baixar o Firefox;</li>
+                    <li>Na página de download, o site deve detectar automaticamente o seu sistema operacional. Se não, selecione-o na lista suspensa;</li>
+                    <li>Clique no botão "Baixar agora" para iniciar o download.</li>
+                </ul>
+
+                <h2 id="instalar">Instalar o Mozilla Firefox</h2>
+                <ul>
+                    <li>Após o download estar completo, abra o arquivo de instalação;</li>
+                    <li>Siga as instruções na tela para instalar o Firefox no seu dispositivo;</li>
+                    <li>Quando a instalação estiver concluída, o Firefox estará pronto para ser usado.</li>
+                </ul>
+
+                <h2 id="pendrive">Usar o Mozilla Firefox</h2>
+                <ul>
+                    <li>Abra o Mozilla Firefox clicando no ícone do aplicativo;</li>
+                    <li> Na barra de endereço, digite o endereço do site que deseja visitar e pressione Enter;</li>
+                    <li>Para abrir uma nova aba, clique no ícone de "+" ao lado das abas existentes ou pressione Ctrl + T no teclado;</li>
+                    <li>Para acessar suas configurações e personalizar o Firefox, clique no menu no canto superior direito e selecione "Opções" ou "Preferências", dependendo do sistema operacional.</li>
+                    <li>Explore os recursos do Firefox, como abas personalizadas, extensões e mais, para uma experiência de navegação personalizada.</li>
+                </ul>
+                <h3 id="vantagens">Vantagens do Mozilla Firefox</h3>
+                <ul>
+                    <li><strong>Privacidade:</strong> O Firefox tem uma abordagem forte em relação à privacidade do usuário, com recursos como proteção contra rastreamento e um modo de navegação privada;</li>
+                    <li><strong>Customização: </strong> O Firefox oferece uma ampla gama de extensões e temas para personalizar a experiência de navegação de acordo com as preferências do usuário;</li>
+                    <li> <strong>Open Source:</strong> Como software de código aberto, o Firefox permite que os usuários examinem e modifiquem seu código-fonte, aumentando a transparência e a confiança na comunidade de desenvolvedores;</li>
+                    <li> <strong>Performance:</strong> O Firefox tem um desempenho sólido em termos de velocidade de carregamento de páginas e consumo de recursos, competindo diretamente com outros navegadores populares.</li>
+                </ul>
+                <h2 id="desvantagens">Desvantagens do Mozilla Firefox</h2>
+                <ul>
+                    <li><strong>Menor integração com serviços do Google:</strong> Alguns usuários podem sentir falta da integração nativa com serviços do Google, como Gmail e Google Drive, que são mais otimizados para o Chrome;</li>
+                    <li><strong>Número menor de extensões:</strong> Embora o Firefox tenha uma variedade decente de extensões, o Chrome ainda tem uma biblioteca maior e mais diversificada devido à sua popularidade;</li>
+                    <li> <strong>Atualizações menos frequentes:</strong> O Firefox costuma lançar atualizações de forma menos frequente do que o Chrome, o que pode resultar em alguns recursos ou correções de segurança chegando mais tarde para os usuários.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <a id="botao-cima" href="#">&#923;</a>
+    <script> //script de fechar e abrir menu ao lado
+        function aberturaMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';   
+        }
+        function fechar(){
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('content').style.marginLeft = '0px';
+        }
+    </script>
+</body>
+</html>

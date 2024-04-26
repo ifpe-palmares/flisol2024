@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="raphaellyzzz">
+    <title>Ubuntu</title>
+    <link rel="stylesheet" href="styleubuntu.css">
+    <link rel="icon" href="../../images/ubuntu-logo.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="abrir-lateral" onclick="aberturaMenu()">&#9776; Menu Navegação</a>
+        <a href="../../index.html" class="voltar">&#8629; Voltar para a página inicial</a>
+    </header>
+    <nav id="menu">
+        <a href="#" onclick="fechar()">&times; Fechar</a>
+        <a href="#vantagem">Vantagens</a>
+        <a href="#desvantagem">Desvantagem</a>
+        <a href="questionario.html">Questionario</a>
+    </nav>
+    
+    <main id="content">
+        <section id="leitura">
+            <article class="bloco">
+                <p>Leia todo o conteúdo da página e após isso clique no menu de navegação para ir ao questionário, Boa sorte!</p>
+                <h2>Tutorial de instalação Ubuntu 23.10!</h2>
+                <ul>
+                    <li>Abra o seu navegador e visite o site oficial do ubuntu e baixe a versão mais recente do UBUNTU; <a href="https://ubuntu.com/download" target="_blank">Clique aqui!</a></li>
+                    <li>Após baixar a ISO, devemos criar uma mídia bootável, poder ser (pen drive ou cd/dvd) alguns programas como RUFUS, YUMI e UNIVERSAL USB INSTALLER, consegue deixar seu pen drive bootável;</li>
+                    <li>Ao iniciar seu computador, pressione a tecla "DEL" ou "F2" vai depender muito do fabricante, mas geralmente é F2, DEL ou F8, isso você vai entrar na BIOS SETUP do seu computador;</li>
+                    <li>Localize no SETUP algo relacionado a BOOT e selecione o pen drive onde está a ISO com o Sistema Operacional UBUNTU, feito isso salve as configurações e reinicie o computador;</li>
+                    <li>Ao iniciar o boot pelo o pen drive, irá subir o Sistema Operacional UBUNTU, você terá duas opções a primeira é experimentar o sistema através do live CD ou instalar no HD, escolha a opção INSTALAR;</li>
+                    <li>Configure o Ubuntu durante a instalação, você irá escolher o idioma, rede wifi e criar uma conta de usuário;</li>
+                    <li>Durante a instalação você também poderá fazer o PARTICIONAMENTO do HD, você pode escolher se quer instalar o UBUNTU por cima do Sistema Nativo do seu computador. Pra a máquina ficar dual boot com dois sistemas operacionais ou deletar o sistema anterior;</li>
+                    <li>Conclua a instalação, reinicie o computador e remova o pen drive;</li>
+                    <li>Lembre-se de fazer um Backup antes de fazer qualquer instalação de Sistema Operacional</li>
+                </ul>
+                <h2 id="vantagem">Vantagens</h2>
+                <ul>
+                    <li>Facilidade de uso - Ubuntu tem uma interface bastante amigável e fácil de usar, principalmente para iniciantes em Software livre, ele oferece um experiência intuitiva, não precisa ser um EXPERT em computação para usar o UBUNTU;</li>
+                    <li>Suporte ao usuário - Ubuntu tem uma grande comunidade ativa de usuários e desenvolvedores, significa que é fácil encontrar um suporte online, tutorias e documentação para resolver o problema, diferentemente se você é um usuário Windows, para abrir um suporte, deve ligar para 0800 pagar uma taxa e fora os "perrengues";</li>
+                    <li>Compatibilidade com Hardware - Ubuntu possui uma ampla compatibilidade com diversos tipos de hardware, muitos drivers estão incluidos por padrão ou pode ser facilmente instalado;</li>
+                    <li>Repositório de Software - Ubuntu possui milhares de software de código aberto gratuito, isso facilita na instalação de qualquer ferramenta;</li>
+                    <li>Ciclo de lançamento - A cada 6 meses é lançado uma nova versão, com mais segurança e todos os usuários tem acesso a essas versões.</li>
+                </ul>
+                <h2 id="desvantagem">Desvantagens</h2>
+                <ul>
+                    <li>Customização Limitada - Ubuntu seja fácil de usar, ele pode ser menos flexível em termos de personalização em comparação com outras distribuições Linux;</li>
+                    <li>Politica de privacidade - algumas versões do Ubuntu incluem software proprietário, o que pode não ser aceitável para alguns usuários que preferem um sistema operacional completamente de código aberto.</li>
+                    <li>Estabilidade Relativa - algumas versão pode aparecer algum bug</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <a id="botao-cima" href="#">&#923;</a>
+    <script> //script de fechar e abrir menu ao lado
+        function aberturaMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';   
+        }
+        function fechar(){
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('content').style.marginLeft = '0px';
+        }
+    </script>
+</body>
+</html>
